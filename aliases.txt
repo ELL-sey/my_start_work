@@ -1,15 +1,23 @@
 # ================= My list aliases =================
 
+# Pack
+alias ud='apt-get update'
+alias ug='apt-get full-upgrade -y'
+alias updg='sudo apt update && sudo apt upgrade'
+alias i='apt-get install -y'
+
 #	Files
 alias ll='ls -Flah --color --group-directories-first'
 alias du='du --time -hc | sort -h'
-alias meminfo='free -mhlt'
+alias mem='free -mhlt'
 alias top=htop
 
 #	Dir
 alias mkdir='mkdir -pv'
 alias count='find . -type f | wc -l'
 alias cd..='cd ..'
+alias cd.='cd ..'
+alias cd .='cd ..'
 alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
@@ -18,12 +26,13 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
 
 #	System 
-alias update='sudo apt update && sudo apt upgrade'
 alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
 alias root='sudo -i'
 alias su='sudo -i'
 alias reboot='sudo /sbin/reboot'
+alias boot='sudo /sbin/reboot'
 alias shutdown='sudo /sbin/shutdown'
+alias down='sudo /sbin/shutdown'
 
 #	VIM
 alias vim=nvim
@@ -40,7 +49,6 @@ alias j='jobs -l'
 #	Python
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
-alias ports='netstat -tulanp'
 
 #	Docker
 alias dockrun=’sudo docker run -i -t --privileged $@’
@@ -50,7 +58,13 @@ alias dockstop=’sudo docker stop $(docker ps -a -q) ‘
 alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%T"'
 alias nowtime=now
+alias ps='ps -elf'
+alias psg='ps -elf | grep '
 alias nowdate='date +"%d-%m-%Y"'
 
 #	Net tools
 alias ping='ping -c 5'
+alias ports='netstat -tulanp'
+alias ns=nslookup
+alias ip='ip a'
+
