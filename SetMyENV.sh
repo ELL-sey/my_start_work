@@ -36,7 +36,7 @@ fi
 
 
 # install ALIASES
-wget https://github.com/ELL-sey/my_start_work/blob/main/aliases.txt 
+wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/ELL-sey/my_start_work/refs/heads/main/aliases.txt
 cat aliases.txt >>  ~/.bashrc
 rm aliases.txt
 
