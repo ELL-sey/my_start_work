@@ -11,6 +11,7 @@ alias ll='ls -Flah --color --group-directories-first'
 alias du='du --time -hc | sort -h'
 alias mem='free -mhlt'
 alias top=htop
+alias delcom='grep -vE "^#|^;"'
 
 #	Dir
 alias mkdir='mkdir -pv'
