@@ -38,6 +38,8 @@ alias down='sudo /sbin/shutdown'
 #	VIM
 alias vim=nvim
 alias vi=nvim
+alias nano=nvim
+alias edit=nvim
 
 #	CMD
 alias c='clear'
