@@ -1,10 +1,10 @@
 # ================= My list aliases =================
 
 # Pack
-alias ud='apt-get update'
-alias ug='apt-get full-upgrade -y'
+alias ud='sudo apt update'
+alias ug='sudo apt full-upgrade -y'
 alias updg='sudo apt update && sudo apt upgrade'
-alias i='apt-get install -y'
+alias i='sudo apt install -y'
 
 #	Files
 alias ll='ls -Flah --color --group-directories-first'
@@ -12,13 +12,14 @@ alias du='du --time -hc | sort -h'
 alias mem='free -mhlt'
 alias top=htop
 alias delcom='grep -vE "^#|^;"'
+alias cat=bat
+alias lg='lazygit'
 
 #	Dir
 alias mkdir='mkdir -pv'
 alias count='find . -type f | wc -l'
 alias cd..='cd ..'
 alias cd.='cd ..'
-alias cd .='cd ..'
 alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
@@ -53,9 +54,6 @@ alias j='jobs -l'
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
 
-#	Docker
-alias dockrun=’sudo docker run -i -t --privileged $@’
-alias dockstop=’sudo docker stop $(docker ps -a -q) ‘
 
 #	INFO
 alias path='echo -e ${PATH//:/\\n}'
