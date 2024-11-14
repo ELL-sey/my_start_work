@@ -28,7 +28,6 @@ menuMain ()
 menuInstall ()
 {
   echo 'Insatll menu'
-
   OPT_Install=$(whiptail --title 'Что установить?' --checklist 'Выберите что установить' 15 60 4 \
   'env'       'Окружение'       ON \
   'Progs'     'Любимые проги'   ON  3>&1 1>&2 2>&3)
@@ -120,7 +119,7 @@ sudo timedatectl set-timezone Asia/Novosibirsk
 setNiceBash ()
 {
   curl -sS https://starship.rs/install.sh | sh
-  eval "$(starship init bash)"
+  #eval "$(starship init bash)"
 }
 
 getBat ()
