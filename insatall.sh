@@ -4,7 +4,7 @@ export NEWT_COLORS='
 window=,blue
 border=white,blue
 textbox=white,black
-button=black,white'
+button=black,green'
 
 
 #================================================================================
