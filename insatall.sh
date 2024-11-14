@@ -231,7 +231,7 @@ getTermShark ()
 
 #================================ Сама программа  ================================================
 
-wget -q --tries=2 --timeout=3 --spider http://google.com
+wget -q --tries=2 --timeout=3 --spider https://google.com
 if [[ !  $? -eq 0 ]]; then
   echo "Network Error"
   exit 1
