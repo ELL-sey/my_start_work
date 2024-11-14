@@ -12,8 +12,6 @@ alias du='du --time -hc | sort -h'
 alias mem='free -mhlt'
 alias top=htop
 alias delcom='grep -vE "^#|^;"'
-alias cat=bat
-alias lg='lazygit'
 
 #	Dir
 alias mkdir='mkdir -pv'
@@ -37,10 +35,7 @@ alias shutdown='sudo /sbin/shutdown'
 alias down='sudo /sbin/shutdown'
 
 #	VIM
-alias vim=nvim
-alias vi=nvim
-alias nano=nvim
-alias edit=nvim
+
 
 #	CMD
 alias c='clear'
